@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Juan Crisman</title>
+    <meta name="description" content="Catalogo de proyectos desarrollados por Juan Bautista Crisman.">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body class="min-h-screen overflow-x-hidden bg-slate-950 text-slate-200">
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-6xl px-4 nav-shell">
+        <div class="glass-card rounded-full p-1.5 pl-4 pr-2 flex items-center justify-between gap-4 nav-container">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="text-sm font-semibold text-white hidden sm:block nav-brand">JUAN CRISMAN</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-1 nav-menu">
+                <a href="index.html#inicio" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Inicio</a>
+                <a href="index.html#educacion" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Educacion</a>
+                <a href="index.html#experiencia" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Experiencia</a>
+                <a href="index.html#habilidades" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Habilidades</a>
+                <a href="proyectos.html" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-white hover:text-slate-200 transition-colors rounded-full">Proyectos</a>
+                <a href="index.html#contacto" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Contacto</a>
+            </div>
+
+            <button class="download-cv-btn nav-download-btn flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-4 py-2 transition-all group">
+                <span class="text-sm font-medium text-white nav-download-label">Descargar CV</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white group-hover:translate-y-0.5 transition-transform">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </button>
+
+            <button class="nav-toggle-btn md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu-overlay" data-mobile-close></div>
+        <div id="mobile-menu" class="mobile-menu-panel" aria-hidden="true">
+            <a href="index.html#inicio" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Inicio</a>
+            <a href="index.html#educacion" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Educacion</a>
+            <a href="index.html#experiencia" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Experiencia</a>
+            <a href="index.html#habilidades" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Habilidades</a>
+            <a href="proyectos.html" class="nav-link nav-mobile-link text-base font-medium text-white">Proyectos</a>
+            <a href="index.html#contacto" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Contacto</a>
+            <button class="download-cv-btn nav-mobile-download-btn flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-4 py-3 transition-all group">
+                <span class="text-sm font-medium text-white">Descargar CV</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white group-hover:translate-y-0.5 transition-transform">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="project-catalog-page relative z-10">
+        <section class="project-catalog-hero px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 glass-card bg-blue-950/20 border-blue-500/20 rounded-full px-4 py-1.5 mb-6 animate-on-scroll">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <span class="text-sm font-medium text-blue-100">Catalogo</span>
+                </div>
+                <h1 class="project-catalog-title animate-on-scroll">TODOS MIS PROYECTOS</h1>
+                <p class="project-catalog-intro animate-on-scroll">Una seleccion de desarrollos web, sistemas de gestion y experiencias digitales creadas con foco en claridad, rendimiento y uso real.</p>
+            </div>
+        </section>
+
+        <section class="project-catalog-section px-4">
+            <div class="project-filter-dropdown max-w-6xl mx-auto animate-on-scroll">
+                <button class="project-filter-toggle" type="button" aria-expanded="false" aria-controls="project-filter-panel">
+                    <span>Filtrar proyectos</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                </button>
+
+                <div id="project-filter-panel" class="project-catalog-filters" aria-label="Filtrar proyectos por tipo de web">
+                    <button class="project-filter-btn is-active" type="button" data-project-filter="all">Todos</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="ecommerce">Ecommerce</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="moda">Moda</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="salud">Salud</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="alimento">Alimento</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="ambiental">Ambientales</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="corporativa">Corporativas</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="servicios">Servicios</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="eventos">Eventos</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="automotriz">Automotriz</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="construccion">Construccion</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="inmobiliaria">Inmobiliarias</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="hogar">Hogar</button>
+                    <button class="project-filter-btn" type="button" data-project-filter="sistema">Sistemas</button>
+                </div>
+            </div>
+
+            <div class="project-catalog-grid max-w-6xl mx-auto">
+                <article class="project-catalog-card glass-card animate-on-scroll" data-project-categories="corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/cp-web-optimized.jpg" alt="Sitio web CleanPel" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web corporativa</span>
+                            <span>CleanPel</span>
+                        </div>
+                        <h2>CleanPel - Sitio Web Corporativo</h2>
+                        <p>Sitio enfocado en presentar productos, servicios y valores de marca, facilitando el contacto con clientes mediante una experiencia responsive, clara y profesional.</p>
+                        <div class="project-catalog-tags">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>React</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-catalog-card glass-card animate-on-scroll" data-project-categories="sistema salud">
+                    <div class="project-catalog-image">
+                        <img src="img/gym-sistema-optimized.jpg" alt="Sistema de gestion para gimnasio" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Sistema de gestion</span>
+                            <span>Gimnasio</span>
+                        </div>
+                        <h2>Sistema de Gestion para Gimnasio</h2>
+                        <p>Sistema desarrollado en GeneXus para administrar alumnos, empleados, clases, rutinas, maquinas y cuotas, optimizando la organizacion diaria del gimnasio.</p>
+                        <div class="project-catalog-tags">
+                            <span>GeneXus</span>
+                            <span>Base de Datos</span>
+                            <span>Gestion</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-catalog-card glass-card animate-on-scroll" data-project-categories="ecommerce moda">
+                    <div class="project-catalog-image">
+                        <img src="img/fn-web-optimized.jpg" alt="Ecommerce Feelnothing" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Ecommerce</span>
+                            <span>Feelnothing</span>
+                        </div>
+                        <h2>Feelnothing - Ecommerce Personalizado</h2>
+                        <p>Plataforma orientada a la gestion de productos de indumentaria, con organizacion por categorias, visualizacion de articulos e interfaz adaptable a distintos dispositivos.</p>
+                        <div class="project-catalog-tags">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>MySQL</span>
+                            <span>Gestion</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-catalog-card glass-card animate-on-scroll" data-project-categories="corporativa ambiental">
+                    <div class="project-catalog-image">
+                        <img src="img/web-mas-semillas-optimized.jpg" alt="Sitio web Mas Semillas" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web corporativa</span>
+                            <span>Mas Semillas</span>
+                        </div>
+                        <h2>Mas Semillas - Sitio Web Corporativo</h2>
+                        <p>Sitio web para mostrar productos, identidad de marca y canales de contacto con un diseno responsive, visual limpio y navegacion simple.</p>
+                        <div class="project-catalog-tags">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </article>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://gardener.framer.media/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Gardener" data-project-categories="ambiental corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web gardener.png" alt="Sitio web Gardener" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web interactiva</span>
+                            <span>Gardener</span>
+                        </div>
+                        <h2>Gardener - Sitio Web en Framer</h2>
+                        <p>Proyecto web con experiencia visual moderna, navegacion fluida y presentacion responsive, publicado en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>HTML/CSS</span>
+                            <span>Framer</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://rooflet.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Rooflet" data-project-categories="servicios construccion hogar corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web rooflet.png" alt="Sitio web Rooflet" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web servicios</span>
+                            <span>Rooflet</span>
+                        </div>
+                        <h2>Rooflet - Sitio Web en Framer</h2>
+                        <p>Sitio orientado a servicios de techado y mejoras para el hogar, con navegacion simple, enfoque comercial y diseno responsive.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Servicios</span>
+                            <span>Construccion</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://wearix.framer.website/shop" target="_blank" rel="noopener noreferrer" aria-label="Abrir tienda Wearix" data-project-categories="ecommerce moda">
+                    <div class="project-catalog-image">
+                        <img src="img/web wearix.png" alt="Tienda Wearix" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Ecommerce</span>
+                            <span>Wearix</span>
+                        </div>
+                        <h2>Wearix - Tienda en Framer</h2>
+                        <p>Experiencia ecommerce para indumentaria, con catalogo visual, flujo de compra orientado a conversion y adaptacion responsive.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Ecommerce</span>
+                            <span>Moda</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://greenlly.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Greenlly" data-project-categories="ambiental corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web greenly.png" alt="Sitio web Greenlly" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web ambiental</span>
+                            <span>Greenlly</span>
+                        </div>
+                        <h2>Greenlly - Sitio Web en Framer</h2>
+                        <p>Proyecto web con identidad natural, secciones comerciales claras y experiencia responsive para comunicar servicios o iniciativas ambientales.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Ambiental</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://harvesthill-template.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Harvest Hill" data-project-categories="alimento ambiental corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web harvesthill group.png" alt="Sitio web Harvest Hill" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web alimento</span>
+                            <span>Harvest Hill</span>
+                        </div>
+                        <h2>Harvest Hill - Sitio Web en Framer</h2>
+                        <p>Sitio con estetica organica para productos o servicios vinculados a alimentos, campo y marca natural, publicado en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Alimento</span>
+                            <span>Ambiental</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://brentor-template.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Brentor" data-project-categories="servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web brentor.png" alt="Sitio web Brentor" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web profesional</span>
+                            <span>Brentor</span>
+                        </div>
+                        <h2>Brentor - Sitio Web en Framer</h2>
+                        <p>Template profesional con estructura corporativa, bloques de conversion y presentacion responsive para servicios o consultoria.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Servicios</span>
+                            <span>Corporativa</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://greenora.framer.website/#hero" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Greenora" data-project-categories="ambiental corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web greenora.png" alt="Sitio web Greenora" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web ambiental</span>
+                            <span>Greenora</span>
+                        </div>
+                        <h2>Greenora - Sitio Web en Framer</h2>
+                        <p>Proyecto web con foco ecologico, presentacion moderna y navegacion responsive para marcas vinculadas a naturaleza o sostenibilidad.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Ambiental</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://livohaus.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Livohaus" data-project-categories="hogar construccion corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web livohaus.png" alt="Sitio web Livohaus" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web hogar</span>
+                            <span>Livohaus</span>
+                        </div>
+                        <h2>Livohaus - Sitio Web en Framer</h2>
+                        <p>Sitio para vivienda, arquitectura o soluciones del hogar, con una propuesta visual limpia, comercial y adaptable a distintos dispositivos.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Hogar</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://buildpro-template.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web BuildPro" data-project-categories="construccion servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web buildpro.png" alt="Sitio web BuildPro" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web construccion</span>
+                            <span>BuildPro</span>
+                        </div>
+                        <h2>BuildPro - Sitio Web en Framer</h2>
+                        <p>Template para empresas de construccion, pensado para presentar servicios, proyectos y canales de contacto con una experiencia responsive.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Construccion</span>
+                            <span>Servicios</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://plumbing.framer.media/home-2" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Plumbing" data-project-categories="servicios hogar corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web pulmbing.png" alt="Sitio web Plumbing" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web servicios</span>
+                            <span>Plumbing</span>
+                        </div>
+                        <h2>Plumbing - Sitio Web en Framer</h2>
+                        <p>Sitio para servicios de plomeria y mantenimiento del hogar, con enfoque directo en informacion, confianza y contacto rapido.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Servicios</span>
+                            <span>Hogar</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://gleamer.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Gleamer" data-project-categories="servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web gleamer.png" alt="Sitio web Gleamer" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web servicios</span>
+                            <span>Gleamer</span>
+                        </div>
+                        <h2>Gleamer - Sitio Web en Framer</h2>
+                        <p>Proyecto web para servicios profesionales, con presentacion comercial directa, estructura responsive y experiencia moderna publicada en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Servicios</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://monkscare.framer.website/?via=design93#hero" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Monkscare" data-project-categories="salud servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web monkscare.png" alt="Sitio web Monkscare" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web salud</span>
+                            <span>Monkscare</span>
+                        </div>
+                        <h2>Monkscare - Sitio Web en Framer</h2>
+                        <p>Sitio orientado a servicios de cuidado y salud, con navegacion clara, presentacion confiable y diseno responsive publicado en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Salud</span>
+                            <span>Servicios</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://safario.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Safario" data-project-categories="servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web safario.png" alt="Sitio web Safario" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web servicios</span>
+                            <span>Safario</span>
+                        </div>
+                        <h2>Safario - Sitio Web en Framer</h2>
+                        <p>Proyecto web con enfoque visual moderno, secciones comerciales claras y experiencia responsive para presentar servicios o propuestas digitales.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Servicios</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://bamzi.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Bamzi" data-project-categories="alimento">
+                    <div class="project-catalog-image">
+                        <img src="img/web bamzi.png" alt="Sitio web Bamzi" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web alimento</span>
+                            <span>Bamzi</span>
+                        </div>
+                        <h2>Bamzi - Sitio Web en Framer</h2>
+                        <p>Proyecto web gastronomico con presentacion visual moderna, navegacion simple y experiencia responsive publicada en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://saladify.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Saladify" data-project-categories="alimento">
+                    <div class="project-catalog-image">
+                        <img src="img/web saladify.png" alt="Sitio web Saladify" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web alimento</span>
+                            <span>Saladify</span>
+                        </div>
+                        <h2>Saladify - Sitio Web en Framer</h2>
+                        <p>Proyecto web gastronomico con presentacion visual moderna, navegacion simple y experiencia responsive publicada en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://sofra.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Sofra" data-project-categories="alimento">
+                    <div class="project-catalog-image">
+                        <img src="img/web sofra.png" alt="Sitio web Sofra" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web alimento</span>
+                            <span>Sofra</span>
+                        </div>
+                        <h2>Sofra - Sitio Web en Framer</h2>
+                        <p>Proyecto web gastronomico con presentacion visual moderna, navegacion simple y experiencia responsive publicada en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://savoriarestro.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Savoria Restro" data-project-categories="alimento">
+                    <div class="project-catalog-image">
+                        <img src="img/web savoria.png" alt="Sitio web Savoria Restro" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web alimento</span>
+                            <span>Savoria Restro</span>
+                        </div>
+                        <h2>Savoria Restro - Sitio Web en Framer</h2>
+                        <p>Proyecto web gastronomico con presentacion visual moderna, navegacion simple y experiencia responsive publicada en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://blakora.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Blakora" data-project-categories="servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web blakora.png" alt="Sitio web Blakora" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web servicios</span>
+                            <span>Blakora</span>
+                        </div>
+                        <h2>Blakora - Sitio Web en Framer</h2>
+                        <p>Sitio web de servicios con presentacion profesional, secciones comerciales claras y experiencia responsive publicada en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Diseno Web</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://eventhall-template.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Eventhall" data-project-categories="eventos servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web eventhall.png" alt="Sitio web Eventhall" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web eventos</span>
+                            <span>Eventhall</span>
+                        </div>
+                        <h2>Eventhall - Sitio Web en Framer</h2>
+                        <p>Template para eventos y salones, con enfoque visual, informacion ordenada y recorrido responsive orientado a reservas y contacto.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Eventos</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://reliablecars.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Reliable Cars" data-project-categories="automotriz servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web reliable.png" alt="Sitio web Reliable Cars" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web automotriz</span>
+                            <span>Reliable Cars</span>
+                        </div>
+                        <h2>Reliable Cars - Sitio Web en Framer</h2>
+                        <p>Sitio automotriz con catalogo comercial, presentacion de unidades y estructura responsive pensada para consulta rapida.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Automotriz</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://virudo-theme.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Virudo" data-project-categories="servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web virulo.png" alt="Sitio web Virudo" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web corporativa</span>
+                            <span>Virudo</span>
+                        </div>
+                        <h2>Virudo - Sitio Web en Framer</h2>
+                        <p>Theme corporativo en Framer con composicion moderna, bloques flexibles y una navegacion preparada para comunicar servicios.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Theme</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://rectanc.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Rectanc" data-project-categories="construccion servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web rectanc.png" alt="Sitio web Rectanc" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web construccion</span>
+                            <span>Rectanc</span>
+                        </div>
+                        <h2>Rectanc - Sitio Web en Framer</h2>
+                        <p>Sitio para servicios de construccion y arquitectura, con presencia visual solida, informacion comercial y adaptacion responsive.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Construccion</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://strux-template.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Strux" data-project-categories="construccion servicios corporativa">
+                    <div class="project-catalog-image">
+                        <img src="img/web strux.png" alt="Sitio web Strux" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web construccion</span>
+                            <span>Strux</span>
+                        </div>
+                        <h2>Strux - Sitio Web en Framer</h2>
+                        <p>Template para construccion con enfoque institucional, secciones de servicios y experiencia responsive lista para captar consultas.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Construccion</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://revalis.framer.media/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Revalis" data-project-categories="inmobiliaria corporativa servicios">
+                    <div class="project-catalog-image">
+                        <img src="img/web revalis.png" alt="Sitio web Revalis" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web inmobiliaria</span>
+                            <span>Revalis</span>
+                        </div>
+                        <h2>Revalis - Sitio Web en Framer</h2>
+                        <p>Sitio inmobiliario con presencia elegante, comunicacion de valor y estructura responsive orientada a propiedades y contacto.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Inmobiliaria</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="project-catalog-card project-catalog-link glass-card animate-on-scroll" href="https://landmark-cre.framer.website/" target="_blank" rel="noopener noreferrer" aria-label="Abrir sitio web Landmark CRE" data-project-categories="inmobiliaria corporativa servicios">
+                    <div class="project-catalog-image">
+                        <img src="img/web marca.png" alt="Sitio web Landmark CRE" loading="lazy" decoding="async">
+                    </div>
+                    <div class="project-catalog-content">
+                        <div class="project-catalog-meta">
+                            <span>Web inmobiliaria</span>
+                            <span>Landmark CRE</span>
+                        </div>
+                        <h2>Landmark CRE - Sitio Web en Framer</h2>
+                        <p>Sitio para real estate comercial con identidad profesional, presentacion clara de servicios y experiencia responsive en Framer.</p>
+                        <div class="project-catalog-tags">
+                            <span>Framer</span>
+                            <span>Real Estate</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="project-catalog-actions max-w-6xl mx-auto">
+                <a href="index.html#proyectos" class="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-6 py-3 transition-all group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 group-hover:-translate-x-1 transition-transform">
+                        <path d="M19 12H5"></path>
+                        <path d="m12 19-7-7 7-7"></path>
+                    </svg>
+                    <span class="text-sm font-medium text-white">Volver al CV</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.download-cv-btn').forEach(btn => {
+            btn.addEventListener('click', (event) => {
+                event.preventDefault();
+                window.open('Cv JuanCrisman.pdf', '_blank', 'noopener,noreferrer');
+            });
+        });
+
+        const navToggleBtn = document.querySelector('.nav-toggle-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileCloseArea = document.querySelector('[data-mobile-close]');
+        const mobileMenuLinks = document.querySelectorAll('.nav-mobile-link');
+
+        function setMobileMenu(open) {
+            if (!navToggleBtn || !mobileMenu) return;
+            document.body.classList.toggle('mobile-menu-open', open);
+            navToggleBtn.classList.toggle('is-active', open);
+            navToggleBtn.setAttribute('aria-expanded', String(open));
+            mobileMenu.setAttribute('aria-hidden', String(!open));
+        }
+
+        if (navToggleBtn && mobileMenu) {
+            navToggleBtn.addEventListener('click', () => {
+                const isOpen = navToggleBtn.getAttribute('aria-expanded') === 'true';
+                setMobileMenu(!isOpen);
+            });
+        }
+
+        if (mobileCloseArea) {
+            mobileCloseArea.addEventListener('click', () => setMobileMenu(false));
+        }
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => setMobileMenu(false));
+        });
+
+        const projectFilterButtons = document.querySelectorAll('[data-project-filter]');
+        const projectCards = document.querySelectorAll('[data-project-categories]');
+        const projectFilterToggle = document.querySelector('.project-filter-toggle');
+        const projectFilterPanel = document.getElementById('project-filter-panel');
+
+        if (projectFilterToggle && projectFilterPanel) {
+            projectFilterToggle.addEventListener('click', () => {
+                const isOpen = projectFilterToggle.getAttribute('aria-expanded') === 'true';
+                projectFilterToggle.setAttribute('aria-expanded', String(!isOpen));
+                projectFilterPanel.classList.toggle('is-open', !isOpen);
+            });
+        }
+
+        projectFilterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.projectFilter;
+
+                projectFilterButtons.forEach(item => {
+                    item.classList.toggle('is-active', item === button);
+                });
+
+                projectCards.forEach(card => {
+                    const categories = card.dataset.projectCategories.split(' ');
+                    const isVisible = filter === 'all' || categories.includes(filter);
+                    card.classList.toggle('is-hidden-by-filter', !isVisible);
+                });
+            });
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                setMobileMenu(false);
+            }
+        });
+    </script>
+</body>
+</html>

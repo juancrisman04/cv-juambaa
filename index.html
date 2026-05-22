@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisman Juan Bautista</title>
+    <meta name="description" content="Curriculum vitae profesional de desarrollador con experiencia en IEB School y Tecnesio Argentina. Especializado en desarrollo web moderno.">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body class="min-h-screen overflow-x-hidden bg-slate-950 text-slate-200">
+    <!-- Navigation -->
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-6xl px-4 nav-shell">
+        <div class="glass-card rounded-full p-1.5 pl-4 pr-2 flex items-center justify-between gap-4 nav-container">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="text-sm font-semibold text-white hidden sm:block nav-brand">JUAN CRISMAN</a>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-1 nav-menu">
+                <a href="#inicio" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-white hover:text-slate-200 transition-colors rounded-full">Inicio</a>
+                <a href="#educacion" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Educación</a>
+                <a href="#experiencia" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Experiencia</a>
+                <a href="#habilidades" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Habilidades</a>
+                <a href="#proyectos" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Proyectos</a>
+                <a href="#contacto" class="nav-link nav-menu-link px-4 py-2 text-base font-medium text-slate-400 hover:text-white transition-colors rounded-full">Contacto</a>
+            </div>
+            
+            <button class="download-cv-btn nav-download-btn flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-4 py-2 transition-all group">
+                <span class="text-sm font-medium text-white nav-download-label">Descargar CV</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white group-hover:translate-y-0.5 transition-transform">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </button>
+
+            <button class="nav-toggle-btn md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu-overlay" data-mobile-close></div>
+        <div id="mobile-menu" class="mobile-menu-panel" aria-hidden="true">
+            <a href="#inicio" class="nav-link nav-mobile-link text-base font-medium text-white">Inicio</a>
+            <a href="#educacion" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Educación</a>
+            <a href="#experiencia" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Experiencia</a>
+            <a href="#habilidades" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Habilidades</a>
+            <a href="#proyectos" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Proyectos</a>
+            <a href="#contacto" class="nav-link nav-mobile-link text-base font-medium text-slate-300">Contacto</a>
+            <button class="download-cv-btn nav-mobile-download-btn flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-4 py-3 transition-all group">
+                <span class="text-sm font-medium text-white">Descargar CV</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white group-hover:translate-y-0.5 transition-transform">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="min-h-screen flex flex-col items-center justify-center px-4 pt-32 pb-20 relative">
+        
+        <!-- Badge --
+        <div class="glass-card bg-blue-950/20 border-blue-500/20 rounded-full px-4 py-1.5 flex items-center gap-2 mb-8 animate-fade-in-up">
+            <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+            <span class="text-sm font-medium text-blue-100">Disponible para nuevos proyectos</span>
+        </div> -->
+
+        <!-- FOTO PERFIL CENTRADA -->
+        <div class="hero-photo-wrapper animate-fade-in-up animation-delay-150">
+            <div class="hero-photo-glass">
+                <img class="hero-photo-bg" src="img/foto cv 2.jpg" alt="" aria-hidden="true" width="280" height="280" decoding="async" fetchpriority="high" />
+                <img class="hero-photo-main" src="img/foto cv 2.jpg" alt="Foto de perfil" width="280" height="280" decoding="async" fetchpriority="high" />
+            </div>
+        </div>
+        
+        <!-- TITULO -->
+        <h1 class="text-center text-6xl md:text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/40 mb-6 animate-fade-in-up animation-delay-100">
+            <span class="block">Desarrollador</span>
+            <span class="block text-white/80">Full Stack</span>
+        </h1>
+        
+        <!-- MI DESCRIPCION -->
+        <p class="text-lg md:text-xl text-slate-400 text-center max-w-2xl leading-relaxed mb-10 animate-fade-in-up animation-delay-200">
+            Me llamo Juan Bautista y soy desarrollador de software con conocimientos en múltiples lenguajes de programación y gestión de bases de datos. Formación orientada al desarrollo de aplicaciones, resolución de problemas y buenas prácticas de programación. Experiencia académica y práctica en proyectos que integran frontend, backend y persistencia de datos. Me caracterizo por el aprendizaje constante, la adaptabilidad y la motivación por seguir creciendo en el área tecnológica.
+        </p>
+        
+        <!-- BOTONES CONTACTAR Y VER PROYECTOS -->
+        <div class="flex flex-col sm:flex-row gap-4 items-center animate-fade-in-up animation-delay-300">
+            <a href="https://wa.me/5493413045521" target="_blank" rel="noopener noreferrer" class="primary-cta-btn group flex items-center gap-3 bg-gradient-to-b from-blue-500/10 via-blue-500/0 to-blue-500/10 border border-white/10 rounded-full px-8 py-3 relative shadow-xl backdrop-blur-2xl transition-all hover:bg-blue-900/20">
+                <div class="absolute inset-0 rounded-full border-beam-animation"></div>
+                <div class="relative z-10 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <span class="text-lg font-semibold text-white">Contactar Ahora</span>
+                </div>
+            </a>
+            
+            <a href="#proyectos" class="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-6 py-3 transition-all group">
+                <span class="text-sm font-medium text-white">Ver Proyectos</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white group-hover:translate-x-0.5 transition-transform">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        
+        <!-- TARJETAS FLOTANTES -->
+        <div class="hidden lg:block glass-card w-72 rounded-2xl p-4 absolute bottom-[15%] right-[8%] floating-card-1">
+            <div class="flex items-center gap-3 mb-3">
+                <div class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></div>
+                <div>
+                    <div class="text-sm font-semibold text-white">EXPERIENCIA</div>
+                    <div class="text-sm text-slate-400">+3 años desarrollando</div>
+                </div>
+            </div>
+            <div class="space-y-2">
+                <div class="glass-subtle rounded-lg p-3">
+                    <div class="text-sm font-semibold text-blue-400 mb-1">Clean Pel</div>
+                    <div class="text-sm text-slate-300">Programador Web</div>
+                    <div class="text-sm text-slate-500 mt-1">2024 - Presente</div>
+                </div>
+
+                <div class="glass-subtle rounded-lg p-3">
+                    <div class="text-sm font-semibold text-blue-400 mb-1">Mas Semillas</div>
+                    <div class="text-sm text-slate-300">Programador Web</div>
+                    <div class="text-sm text-slate-500 mt-1">2025 - Presente</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hidden lg:block glass-card w-72 rounded-2xl p-4 absolute top-[25%] right-[8%] floating-card-2">
+            <div class="flex items-center justify-between mb-3">
+                <span class="text-sm font-semibold text-slate-400">HABILIDADES</span>
+                <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+                <span class="glass-subtle px-3 py-1.5 rounded-full text-sm font-medium text-blue-300 border border-blue-500/30">JavaScript</span>
+                <span class="glass-subtle px-3 py-1.5 rounded-full text-sm font-medium text-green-300 border border-green-500/30">HTML/CSS</span>
+                <span class="glass-subtle px-3 py-1.5 rounded-full text-sm font-medium text-purple-300 border border-purple-500/30">C C++ C#</span>
+                <span class="glass-subtle px-3 py-1.5 rounded-full text-sm font-medium text-orange-300 border border-orange-500/30">MySQL</span>
+            </div>
+        </div>
+        
+        <div class="hidden lg:block glass-card w-64 rounded-2xl p-4 absolute left-[10%] floating-card-3">
+            <div class="flex items-center justify-between mb-3">
+                <span class="text-sm font-semibold text-slate-400">PROYECTOS</span>
+                <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="text-4xl font-bold text-white">10+</div>
+                <div class="text-sm text-slate-400 leading-tight">Proyectos Académicos y Laborales Exitosos</div>
+            </div>
+        </div>
+
+        <div class="hidden lg:block glass-card w-72 rounded-2xl p-4 absolute top-[20%] left-[8%] floating-card-4">
+            <div class="flex items-center gap-3 mb-3">
+                <div class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></div>
+                <div>
+                    <div class="text-sm font-semibold text-white">JUAN BAUTISTA CRISMAN</div>
+                    <div class="text-sm text-slate-400">Información personal</div>
+                </div>
+            </div>
+
+            <div class="space-y-2 text-sm">
+                <div class="glass-subtle rounded-lg p-2 flex justify-between">
+                    <span class="text-slate-400">Edad</span>
+                    <span class="text-slate-200 font-medium">21 años</span>
+                </div>
+
+                <div class="glass-subtle rounded-lg p-2 flex justify-between">
+                    <span class="text-slate-400">Nacionalidad</span>
+                    <span class="text-slate-200 font-medium">Argentina</span>
+                </div>
+
+                <div class="glass-subtle rounded-lg p-2 flex justify-between">
+                    <span class="text-slate-400">Ciudad</span>
+                    <span class="text-slate-200 font-medium">Rosario</span>
+                </div>
+
+                <div class="glass-subtle rounded-lg p-2 flex justify-between">
+                    <span class="text-slate-400">Modalidad</span>
+                    <span class="text-green-400 font-medium">Remoto / Freelance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCACIÓN -->
+<section id="educacion" class="py-24 px-4 relative">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- HEADER -->
+    <div class="text-center mb-16 animate-on-scroll">
+      <div class="inline-flex items-center gap-2 glass-card bg-blue-950/20 border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="text-blue-400">
+          <path d="M22 10L12 4 2 10l10 6 10-6z"></path>
+          <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+        </svg>
+        <span class="text-sm font-medium text-blue-100">Formación Académica</span>
+      </div>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        EDUCACIÓN
+      </h2>
+
+      <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+        Mi recorrido educativo en el mundo de la informática
+      </p>
+    </div>
+
+    <!-- GRID EDUCACIÓN -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- SECUNDARIO -->
+      <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll">
+        <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-blue-400">
+            <path d="M22 10L12 4 2 10l10 6 10-6z"></path>
+            <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-2">EDUCACIÓN SECUNDARIA</h3>
+
+        <p class="text-slate-400 text-sm mb-3">
+          Escuela con orientación en economía.
+        </p>
+
+        <div class="glass-subtle rounded-lg p-3">
+          <div class="text-sm font-semibold text-blue-400 mb-1">Escuela Nazaret N° 8171</div>
+          <div class="text-sm text-slate-300">Bachiller en Economia y Administración</div>
+          <div class="text-sm text-slate-500 mt-1">2018 - 2022</div>
+        </div>
+      </div>
+
+      <!-- TERCIARIO -->
+      <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll animation-delay-100">
+        <div class="w-12 h-12 rounded-xl bg-green-500/20 border border-green-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-green-400">
+            <path d="M22 10L12 4 2 10l10 6 10-6z"></path>
+            <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-2">EDUCACIÓN TERCIARIA</h3>
+
+        <p class="text-slate-400 text-sm mb-3">
+          Formación superior en desarrollo de software.
+        </p>
+
+        <div class="glass-subtle rounded-lg p-3 mb-2">
+          <div class="text-sm font-semibold text-green-400 mb-1">Instituto superior N° 4041</div>
+          <div class="text-sm text-slate-300">Programador y Desarrollador de Software</div>
+          <div class="text-sm text-slate-500 mt-1">2023 - 2025</div>
+        </div>
+      </div>
+
+      <!-- CURSOS ONLINE -->
+      <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll animation-delay-200">
+        <div class="w-12 h-12 rounded-xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-purple-400">
+            <path d="M22 10L12 4 2 10l10 6 10-6z"></path>
+            <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-2">CURSOS ONLINE</h3>
+
+        <p class="text-slate-400 text-sm mb-3">
+          Capacitación continua en tecnologías modernas.
+        </p>
+
+        <div class="space-y-2">
+          <div class="glass-subtle rounded-lg p-3">
+            <div class="text-sm font-semibold text-purple-400">Educación IT</div>
+            <div class="text-sm text-slate-300">Desarrollo Web Full Stack</div>
+            <div class="text-sm text-slate-500 mt-1">2024</div>
+          </div>
+
+          <div class="glass-subtle rounded-lg p-3">
+            <div class="text-sm font-semibold text-purple-400">Educación IT</div>
+            <div class="text-sm text-slate-300">Desarrollo Base de Datos</div>
+            <div class="text-sm text-slate-500 mt-1">2024</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="py-24 px-4 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-on-scroll">
+                <div class="inline-flex items-center gap-2 glass-card bg-blue-950/20 border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span class="text-sm font-medium text-blue-100">Trayectoria Profesional</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">EXPERIENCIA LABORAL</h2>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto">Colaborando con empresas que buscan ser líderes en su rubro</p>
+            </div>
+            
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <!-- CLEAN PEL -->
+                <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Técnico / Programador</h3>
+                            <div class="flex items-center gap-2 text-blue-400 font-semibold mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Clean Pel SRL - Empresa De Productos y Servicios De Limpieza</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-slate-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>Marzo 2025 - Presente</span>
+                            </div>
+                        </div>
+                        <div class="glass-subtle px-3 py-1.5 rounded-full text-xs font-semibold text-green-400 border border-green-500/30 w-fit">
+                            Actual
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 mt-0.5 flex-shrink-0">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Desarrollo de Landing Page con información de la empresa.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 mt-0.5 flex-shrink-0">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Mantenimiento constante de sección de Productos, Servicios y Formulario de Contacto.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 mt-0.5 flex-shrink-0">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Administración de servidor de correos e información.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- MAS SEMILLAS -->
+                <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Técnico / Programador</h3>
+                            <div class="flex items-center gap-2 text-blue-400 font-semibold mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Mas Semillas - Empresa de Semillas y Agroquímicos</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-slate-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>Diciembre 2025 - Presente</span>
+                            </div>
+                        </div>
+                        <div class="glass-subtle px-3 py-1.5 rounded-full text-xs font-semibold text-green-400 border border-green-500/30 w-fit">
+                            Actual
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 mt-0.5 flex-shrink-0">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Desarrollo de Landing Page con información de la empresa.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 mt-0.5 flex-shrink-0">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Administración de servidor de correos e información.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 mt-0.5 flex-shrink-0">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Mantenimiento constante de sección de Productos, Servicios y Formulario de Contacto.</span>
+                        </li>
+                    </ul>
+                </div>
+               
+                <!-- FEEL NOTHING-->
+                <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Dueño / Administrador</h3>
+                            <div class="flex items-center gap-2 text-blue-400 font-semibold mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Feel Nothing - Emprendimiento De Ropa Urbana</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-slate-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>Diciembre 2024 - Presente</span>
+                            </div>
+                        </div>
+                        <div class="glass-subtle px-3 py-1.5 rounded-full text-xs font-semibold text-green-400 border border-green-500/30 w-fit">
+                            Actual
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 mt-0.5 flex-shrink-0">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Desarrollo de Ecommerce con información y productos de la marca.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 mt-0.5 flex-shrink-0">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Administración y Gestión de stock de productos.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 mt-0.5 flex-shrink-0">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Gestión de redes sociales y marketing digital.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="py-24 px-4 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-on-scroll">
+                <div class="inline-flex items-center gap-2 glass-card bg-blue-950/20 border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="text-blue-400">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span class="text-sm font-medium text-blue-100">Stack, Soft Skills & Idiomas</span>
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">
+                    HABILIDADES
+                </h2>
+
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto text-center">
+                    Tecnologías, herramientas y habilidades personales que aplico en cada proyecto
+                </p>
+            </div>
+
+            <div class="mb-10 animate-on-scroll">
+                <h3 class="text-2xl font-bold text-white mb-6 text-center">HABILIDADES TÉCNICAS</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- FRONTEND -->
+                    <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-blue-400">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+
+                        <h4 class="text-xl font-bold text-white mb-3">FRONTEND</h4>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">HTML5</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">CSS3</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">JavaScript</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">React.js</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Next.js</span>
+                        </div>
+                    </div>
+
+                    <!-- BACKEND -->
+                    <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll animation-delay-100">
+                        <div class="w-12 h-12 rounded-xl bg-green-500/20 border border-green-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-green-400">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+
+                        <h4 class="text-xl font-bold text-white mb-3">BACKEND</h4>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Python</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Node.js</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">C</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">C++</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">C#</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">n8n</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">SQL</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">GeneXus</span>
+                        </div>
+                    </div>
+
+                    <!-- HERRAMIENTAS -->
+                    <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll animation-delay-200">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-purple-400">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+
+                        <h4 class="text-xl font-bold text-white mb-3">HERRAMIENTAS</h4>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Git</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">GitHub</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">VS Code</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Figma</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Hostinger</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Vercel</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Wordpress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animate-on-scroll">
+                <h3 class="text-2xl font-bold text-white mb-6 text-center">HABILIDADES BLANDAS E IDIOMAS</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- HABILIDADES BLANDAS -->
+                    <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-purple-400">
+                                <path d="M17 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M7 21v-2a4 4 0 0 1 3-3.87"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+
+                        <h4 class="text-xl font-bold text-white mb-3">HABILIDADES BLANDAS</h4>
+
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Trabajo en equipo</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Comunicación clara</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Resolución de problemas</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Adaptabilidad</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Aprendizaje continuo</span>
+                            <span class="px-3 py-1 rounded-full text-sm bg-white/5 text-slate-300 border border-white/10">Gestión del tiempo</span>
+                        </div>
+                    </div>
+
+                    <!-- IDIOMAS -->
+                    <div class="glass-card rounded-2xl p-6 hover:border-white/20 transition-all group animate-on-scroll animation-delay-100">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-blue-400">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10
+                                        15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+
+                        <h4 class="text-xl font-bold text-white mb-3">IDIOMAS</h4>
+
+                        <div class="flex flex-col gap-3">
+                            <div class="flex justify-between items-center glass-subtle px-4 py-2 rounded-lg">
+                                <span class="text-sm text-slate-300">Español</span>
+                                <span class="text-sm font-medium text-green-400">Nativo</span>
+                            </div>
+                            <div class="flex justify-between items-center glass-subtle px-4 py-2 rounded-lg">
+                                <span class="text-sm text-slate-300">Inglés</span>
+                                <span class="text-sm font-medium text-blue-400">B2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="proyectos" class="py-24 px-4 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-on-scroll">
+                <div class="inline-flex items-center gap-2 glass-card bg-blue-950/20 border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <span class="text-sm font-medium text-blue-100">Portfolio</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">PROYECTOS DESTACADOS </h2>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto">Selección de trabajos recientes que demuestran mis capacidades y habilidades</p>
+            </div>
+            
+            <div class="projects-featured-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- PROYECTO 1: CLEAN PEL -->
+                <div class="glass-card is-active rounded-2xl overflow-hidden hover:border-white/20 transition-all group animate-on-scroll" style="--reveal-delay: 0s;">
+
+                    <!--imagen -->
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="img/cp-web-optimized.jpg" alt="Sitio web CleanPel" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async"/>
+                          <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+
+                    <!-- Contenido -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors"> CleanPel - Sitio Web Corporativo</h3>
+
+                        <p class="text-slate-400 text-base mb-4"> Sistema enfocado en presentar productos, servicios y valores de marca, facilitando el contacto con clientes.
+                          Diseño moderno, responsive y optimizado para una navegación clara y profesional.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20">JavaScript</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-green-500/10 text-green-300 border border-green-500/20">HTML / CSS</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20">React</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-orange-500/10 text-orange-300 border border-orange-500/20">Responsive Design</span>
+                        </div>
+                        <span class="inline-block text-base font-semibold text-blue-400">Proyecto</span>
+                    </div>
+                </div>
+
+                
+                <!-- PROYECTO 2: SISTEMA GYM-->
+                <div class="glass-card rounded-2xl overflow-hidden hover:border-white/20 transition-all group animate-on-scroll" style="--reveal-delay: 0.055s;">
+                    <!--imagen -->
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="img/gym-sistema-optimized.jpg" alt="Sistema de gestión para gimnasio" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async"/>
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+
+                    <!-- Contenido -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors"> Sistema de Gestión para Gimnasio</h3>
+
+                        <p class="text-slate-400 text-base mb-4">
+                            Sistema desarrollado en GeneXus para la gestión de un gimnasio. Permite administrar alumnos, empleados, clases, rutinas, máquinas, cuotas.
+                            optimizando la operación diaria y la organización interna.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20">GeneXus</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-green-500/10 text-green-300 border border-green-500/20">Base de Datos</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20">Sistema de Gestión</span>
+                        </div>
+                        <span class="inline-block text-base font-semibold text-blue-400">Proyecto</span>
+                    </div>
+                </div>
+
+                
+                <!-- PROYECTO 3: ECOMMERCE FEELNOTHING-->
+                <div class="glass-card rounded-2xl overflow-hidden hover:border-white/20 transition-all group animate-on-scroll" style="--reveal-delay: 0s;">
+                    <!--imagen -->
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="img/fn-web-optimized.jpg" alt="Sistema de gestión para gimnasio" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async"/>
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+
+                    <!-- Contenido -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors"> Feelnothing - Ecommerce Personalizado</h3>
+
+                        <p class="text-slate-400 text-base mb-4">
+                            Sistema diseñado para la gestión de un ecommerce de indumentaria.
+                            Incluye organización por categorías, visualización de productos, interfaz adaptable y optimización para distintos dispositivos.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20">JavaScript</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-green-500/10 text-green-300 border border-green-500/20">HTML/CSS</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20">MySQL</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-orange-500/10 text-orange-300 border border-orange-500/20">Sistema de Gestión</span>
+                        </div>
+                        <span class="inline-block text-base font-semibold text-blue-400">Proyecto</span>
+                    </div>
+                </div>
+                
+                <!-- PROYECTO 4: MAS SEMILLAS -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:border-white/20 transition-all group animate-on-scroll" style="--reveal-delay: 0.055s;">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="img/web-mas-semillas-optimized.jpg" alt="Sitio web Mas Semillas" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async"/>
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Mas Semillas - Sitio Web Corporativo</h3>
+                        <p class="text-slate-400 text-base mb-4">
+                            Sitio web enfocado en mostrar productos, identidad de marca y canales de contacto de forma clara.
+                            Diseño responsive, visual limpio y navegación pensada para una experiencia simple y profesional.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20">JavaScript</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-green-500/10 text-green-300 border border-green-500/20">HTML/CSS</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20">Diseño Web</span>
+                            <span class="px-2 py-1 rounded-md text-sm font-medium bg-orange-500/10 text-orange-300 border border-orange-500/20">Responsive Design</span>
+                        </div>
+                        <span class="inline-block text-base font-semibold text-blue-400">Proyecto</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-carousel-dots" aria-label="Navegar proyectos destacados">
+                <button type="button" class="projects-carousel-dot is-active" aria-label="Ver proyecto CleanPel" aria-current="true"></button>
+                <button type="button" class="projects-carousel-dot" aria-label="Ver proyecto Sistema de Gestion"></button>
+                <button type="button" class="projects-carousel-dot" aria-label="Ver proyecto Feelnothing"></button>
+                <button type="button" class="projects-carousel-dot" aria-label="Ver proyecto Mas Semillas"></button>
+            </div>
+
+            <div class="projects-cta-wrap flex justify-center animate-on-scroll">
+                <a href="proyectos.html" class="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full px-6 py-3 transition-all group">
+                    <span class="text-sm font-medium text-white">Ver todos mis proyectos</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400 group-hover:translate-x-1 transition-transform">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 px-4 relative">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="animate-on-scroll">
+                <div class="inline-flex items-center gap-2 glass-card bg-blue-950/20 border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span class="text-sm font-medium text-blue-100">Hablemos</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">INFORMACIÓN DE CONTACTO</h2>
+                <p class="text-lg text-slate-400 mb-12 max-w-2xl mx-auto">Siéntete libre de enviarme oportunidades laborales! Estoy disponible para nuevos proyectos y oportunidades.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 animate-on-scroll animation-delay-100">
+
+          <!-- EMAIL -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=juancrisman04@gmail.com" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-6 hover:border-blue-500/30 transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="text-blue-400">
+                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+              </div>
+              <h3 class="text-base font-semibold text-white mb-1">Email</h3>
+              <p class="text-base text-slate-400">juancrisman04@gmail.com</p>
+          </a>
+
+          <!-- TELÉFONO -->
+          <a href="https://wa.me/5493413045521" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-6 hover:border-blue-500/30 transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-green-500/20 border border-green-500/30 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="text-green-400">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 
+                      19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 
+                      12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6
+                      l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+              </div>
+              <h3 class="text-base font-semibold text-white mb-1">Teléfono</h3>
+              <p class="text-base text-slate-400">+54 9 341 304 5521</p>
+          </a>
+
+          <!-- LINKEDIN -->
+          <a href="https://www.linkedin.com/in/juan-crisman-50722a33b" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-6 hover:border-blue-500/30 transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="text-purple-400">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+              </div>
+              <h3 class="text-base font-semibold text-white mb-1">LinkedIn</h3>
+              <p class="text-base text-slate-400">Conectar en LinkedIn</p>
+          </a>
+      </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+                <div class="flex items-center gap-2">
+                    <div class="w-6 h-6 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white font-bold text-xs">
+                        CV
+                    </div>
+                    <span class="text-slate-400">© Crisman Juan Bautista 2026</span>
+                </div>
+                
+                <div class="flex items-center gap-6">
+                    <a href="https://www.linkedin.com/in/juan-crisman" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                        GitHub
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                        Privacidad
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Active nav link on scroll
+        let sections = [];
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        let navTicking = false;
+
+        function refreshSectionPositions() {
+            sections = Array.from(document.querySelectorAll('section[id]')).map(section => ({
+                id: section.getAttribute('id'),
+                top: section.offsetTop
+            }));
+        }
+
+        function updateActiveNavLink() {
+            let current = sections[0]?.id || '';
+            const scrollPosition = window.pageYOffset + 220;
+
+            sections.forEach(section => {
+                if (scrollPosition >= section.top) {
+                    current = section.id;
+                }
+            });
+
+            const nearBottom =
+                window.innerHeight + window.pageYOffset >=
+                document.documentElement.scrollHeight - 2;
+
+            if (nearBottom && sections.length) {
+                current = sections[sections.length - 1].id;
+            }
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-white');
+                link.classList.add('text-slate-400');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-slate-400');
+                    link.classList.add('text-white');
+                }
+            });
+
+            navTicking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!navTicking) {
+                navTicking = true;
+                requestAnimationFrame(updateActiveNavLink);
+            }
+        }, { passive: true });
+
+        refreshSectionPositions();
+        updateActiveNavLink();
+
+        // Download CV functionality
+        document.querySelectorAll('.download-cv-btn, .download-cv-btn-large').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.open('Cv JuanCrisman.pdf', '_blank', 'noopener,noreferrer');
+            });
+        });
+
+        // Mobile navigation
+        const navToggleBtn = document.querySelector('.nav-toggle-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileCloseArea = document.querySelector('[data-mobile-close]');
+        const mobileMenuLinks = document.querySelectorAll('.nav-mobile-link');
+
+        function setMobileMenu(open) {
+            if (!navToggleBtn || !mobileMenu) return;
+            document.body.classList.toggle('mobile-menu-open', open);
+            navToggleBtn.classList.toggle('is-active', open);
+            navToggleBtn.setAttribute('aria-expanded', String(open));
+            mobileMenu.setAttribute('aria-hidden', String(!open));
+        }
+
+        if (navToggleBtn && mobileMenu) {
+            navToggleBtn.addEventListener('click', () => {
+                const isOpen = navToggleBtn.getAttribute('aria-expanded') === 'true';
+                setMobileMenu(!isOpen);
+            });
+        }
+
+        if (mobileCloseArea) {
+            mobileCloseArea.addEventListener('click', () => setMobileMenu(false));
+        }
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => setMobileMenu(false));
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                setMobileMenu(false);
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                setMobileMenu(false);
+            }
+            refreshSectionPositions();
+        });
+
+        window.addEventListener('load', refreshSectionPositions, { once: true });
+    </script>
+
+</body>
+</html>
+
+
+
