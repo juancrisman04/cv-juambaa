@@ -3,7 +3,6 @@
     ".animate-on-scroll",
     ".glass-card",
     ".project-catalog-card",
-    ".project-filter-dropdown",
     ".project-catalog-actions",
     ".projects-cta-wrap",
     ".project-catalog-tags span",
@@ -48,11 +47,11 @@
     }
 
     if (
-      el.matches("h1, h2, .project-catalog-title") ||
+      el.matches("h2, .project-catalog-title") ||
       (el.matches("h3") && !el.closest(".glass-card, .project-catalog-card"))
     ) {
       el.classList.add("reveal-title");
-    } else if (el.matches(".inline-flex.glass-card, .project-filter-dropdown")) {
+    } else if (el.matches(".inline-flex.glass-card")) {
       el.classList.add("reveal-badge");
     } else if (el.matches(".glass-card, .project-catalog-card")) {
       el.classList.add("reveal-card");
